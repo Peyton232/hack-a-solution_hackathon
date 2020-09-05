@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="myscripts.js"></script>\
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="qrcode.js"></script>
+</head>
+  <body>
+    <div class="navbar">
+      <ul class="navbar-container">
+        <li><a href="#" class="left-underline nav-button brand-logo">Brand Logo</a></li>
+        <li class="nav-item"><a href="paymentPage.html" class="left-underline nav-button" data-scroll>Payment Page</a></li>
+        <li class="nav-item active"><a href="website.html" class="left-underline nav-button" data-scroll>Home</a></li>
+      </ul>
+    </div>
+    <div class="parallax p1" id="section-1">
+      <hgroup>
+        <h1>Hello.</h1>
+        <h2>I’m a website.</h2>
+      </hgroup>
+    </div>
+    <div class = "qrCodeSection">
+      <input id="text" type="text" value="wikepedia.com" style="width:80%" /><br />
+      <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+    </div>
+
+    <script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+    	width : 400,
+    	height : 400
+    });
+
+    function makeCode () {
+    	var elText = document.getElementById("text");
+
+    	if (!elText.value) {
+    		alert("Input a text");
+    		elText.focus();
+    		return;
+    	}
+
+    	qrcode.makeCode(elText.value);
+    }
+
+    makeCode();
+
+    $("#text").
+    	on("blur", function () {
+    		makeCode();
+    	}).
+    	on("keydown", function (e) {
+    		if (e.keyCode == 13) {
+    			makeCode();
+    		}
+    	});
+    </script>
+
+
+    <footer>
+      <div class="row" id="section-3">
+        <div class="col-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum tortor ac dui malesuada, id molestie elit aliquam. Fusce laoreet nisl id tellus molestie mattis. Fusce vitae ante quis augue imperdiet rutrum a vitae purus. Etiam tincidunt enim id turpis varius, in condimentum elit.</p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Peyton Thibodeaux and Asim Baral
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
