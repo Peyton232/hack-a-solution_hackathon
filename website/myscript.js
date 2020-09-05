@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 //important
 function myFunction() {
-      var name = "Billy's Shop";
+      var name = "Joe's bbq and Foot Massage";
       document.getElementById("myText").innerHTML = name;
 
       var orderNum = "6942069";
