@@ -1,5 +1,5 @@
-//parrallax - doesn't seem to work as intended
-unction EasyParallax() {
+//parrallax
+function EasyParallax() {
 	scrollPos = $(this).scrollTop();
 	$('.p1').css({
 		'background-position' : '50% ' + (-scrollPos/4)+"px"
@@ -21,23 +21,27 @@ $(document).ready(function(){
 	});
 });
 
+
+
+
+//important
 function myFunction() {
       var name = "Billy's Shop";
       document.getElementById("myText").innerHTML = name;
 
+      var orderNum = "6942069";
+
+      var totPrice = "420.69";
+      document.getElementById("price").innerHTML = totPrice;
 
     }
 
 function makeList() {
     // Establish the array which acts as a data source for the list
     let listData = [
-        'Blue',
-        'Red',
-        'White',
-        'Green',
-        'Black',
-        'Orange',
-        'greenish'
+        'bbq',
+        'foot massage',
+        'good times',
     ],
     // Make a container element for the list
     listContainer = document.createElement('div'),
