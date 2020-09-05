@@ -1,4 +1,4 @@
-
+/*
 function myFunction() {
       var name = "Joe's bbq and Foot Massage";
       document.getElementById("myText").innerHTML = name;
@@ -41,3 +41,4 @@ function makeList() {
         listElement.appendChild(listItem);
     }
 }
+*/
