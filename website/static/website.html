@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>QR Pay</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="navbar-container">
+        <li><a href="moneyLogo.png" class="left-underline nav-button brand-logo"><img src = "moneyLogo.png" alt = "Brand Logo"></img></a></li>
+        <li class="nav-item"><a href="index.ejs" class="left-underline nav-button" data-scroll>Footer(fix)</a></li>
+        <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>How it Works</a></li>
+        <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>Home</a></li>
+      </ul>
+    </div>
+    <div class="parallax p1" id="section-1">
+      <hgroup>
+        <h1>Hello.</h1>
+        <h2>we are QR Pay</h2>
+      </hgroup>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <h1 class = "titles">Problem</h1>
+        <p>Payment terminals in stores are a breeding ground for cross contamination and are not an ideal way to pay in person. Especially with the recent outbreak of covid-19 this can be a real
+          problem to the general public and also make people avoid going to stores. And with small scale sellers lots of the time they are locked into a cash only option which would be even worse
+          for cross contamination.</p>
+      </div>
+      <div class="col-3">
+        <h1 class = "titles">Purpose</h1>
+        <p>Every hour dozens of customers could be touching a payment terminal in a store this could lead to much cross contamination that is really unnecessary. We wanted to eliminate this
+          “bottleneck” and to keep customers safer when shopping. We have come up with QR Pay, a form of payment that is completely contactless, and works similarly to how you would buy items
+          online.</p>
+      </div>
+      <div class="col-3">
+        <h1 class = "titles">Solution</h1>
+        <p>We have come up with an app that lets a seller create a ticket and generate a unique QR code for a customer to scan and pay without making physical contact with anything.
+           This also gives an option to small scale sellers to have access to an easy form of contactless payment.</p>
+      </div>
+    </div>
+
+<main id = "section-2">
+  <h2 class = "titles">How it Works</h2>
+  <p>qr Pay works by ...</p>
+    <ol class="gradient-list" >
+    <li>The seller creates a new order</li>
+    <li>The seller fills out the information on the QR pay mobile app</li>
+    <li>The seller generates a unique qr code for the order</li>
+    <li>The buyer scans this qr code</li>
+    <li>The buyer is brought to a payment page where they get a summary of the order and can fill out payment info</li>
+    <li>Once all info is filled out you press the pay button</li>
+    <li>Transaction complete</li>
+  </ol>
+</main>
+
+    <footer>
+      <div class="row" id="section-3">
+        <div class="col-3">
+          <p>We are committed to bringing you the best customer<br>experience possible, we want to make your life easier and<br>make sure you are safe in these troubling times </p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="containerBot">
+          © 2020 Peyton Thibodeaux and Asim Baral  <h4 id = "contactInfo">Contact info Email:peyton.t131@gmail.com </h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
