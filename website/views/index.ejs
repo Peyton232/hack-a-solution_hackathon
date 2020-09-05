@@ -12,12 +12,12 @@
 
 
     <div id = "form">
-      <body id = "order-form"  onload="myFunction(), makeList()" >
+      <body id = "order-form">
         <div id = "box1">
             <h2 id = "name-label">Order Form: <span id="myText"><% data.storeName %></span><h2/>
               <% data.orderList.forEach(result=>{ %>
-              <li id = "lister"> <%= result %> </li>
-          <% }); %>
+                  <li> <%= result %> </li> 
+              <% }); %>
               <h2>Total Price: $<span id = "price"><% data.totalPrice%></span></h2>
       </div>
 
