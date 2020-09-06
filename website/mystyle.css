@@ -385,6 +385,15 @@ div.navbar > ul > li.nav-item {
 }
 
 
+#contactInfo{
+  float: right;
+  margin: 0 auto;
+}
+
+.titles{
+  color: #476f4d;
+}
+
 
 
 
