@@ -3,17 +3,26 @@
 <head>
   <link rel="stylesheet" href="mystyle.css">
   <script src="myscript.js"></script>
-  <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="qrcode.js"></script>
+  <script type="text/javascript" src="/public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/public/js/qrcode.js"></script>
 </head>
-    <div class="navbar">
-      <ul class="navbar-container">
-        <li><a href="moneyLogo.png" class="left-underline nav-button brand-logo"><img src = "moneyLogo.png" alt = "Brand Logo"></img></a></li>
-        <li><a href="#" class="left-underline nav-button brand-logo">Brand Logo</a></li>
-        <li class="nav-item"><a href="paymentPage.html" class="left-underline nav-button" data-scroll>Payment Page</a></li>
-        <li class="nav-item active"><a href="website.html" class="left-underline nav-button" data-scroll>Home</a></li>
-      </ul>
-    </div>
+<a href="website.html" ><img src = "moneyLogo.png" alt = "Brand Logo" style = "position:absolute; left:0; top:0; width: 140px; Height: auto;"></img></a>
+
+
+
+
+
+
+<script type = "text/javascript">
+         <!--
+            function Warn() {
+               alert ("Transaction complete");
+               document.write ("Transaction Complete");
+            }
+         //-->
+      </script>
+
+
 
 
 
@@ -30,7 +39,11 @@
             <div class="row">
     <div class="col-75">
       <div class="container">
-        <form action="/action_page.php">
+
+
+
+
+        <form action="" method="post">
 
           <div class="row">
             <div class="col-50">
@@ -87,7 +100,7 @@
           <label>
             <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
           </label>
-          <input type="submit" value="Pay" class="btn">
+          <input type="submit" value="Pay" class="btn" onclick="Warn();">
         </form>
       </div>
     </div>
@@ -96,19 +109,6 @@
   </div>
           </div>
       </body>
+
   </div>
-
-
-    <footer>
-      <div class="row" id="section-3">
-        <div class="col-3">
-          <p>We are committed to bringing you the best customer<br>experience possible, we want to make your life easier and<br>make sure you are safe in these troubling times </p>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="containerBot">
-          © 2020 Peyton Thibodeaux and Asim Baral
-        </div>
-      </div>
-    </footer>
 </html>
