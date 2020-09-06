@@ -1,11 +1,12 @@
 
+
 function myFunction() {
-      var name = "Joe's bbq and Foot Massage";
+      var name = "Johnny's Shop";
       document.getElementById("myText").innerHTML = name;
 
-      var orderNum = "6942069";
+      var orderNum = "507c35dd8fada716c89d0013";
 
-      var totPrice = "420.69";
+      var totPrice = "19.99";
       document.getElementById("price").innerHTML = totPrice;
 
     }
@@ -13,9 +14,10 @@ function myFunction() {
 function makeList() {
     // Establish the array which acts as a data source for the list
     let listData = [
-        'bbq',
-        'foot massage',
-        'good times',
+        'Bagel',
+        'Coffee',
+        'Pancakes',
+        'Sausage',
     ],
     // Make a container element for the list
     listContainer = document.createElement('div'),
